@@ -34,6 +34,10 @@ def ask_question():
     response = run_chain(user_input)
     return jsonify({'response': response})
 
+@app.route('/health', methods=['GET'])
+def health():
+    return jsonify({'response': "UP"})
+
 # Run the Flask app
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
