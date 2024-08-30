@@ -1,11 +1,12 @@
 from flask import Flask, request, jsonify
 from langchain_openai import OpenAI
 from langchain.prompts import PromptTemplate
+import os
 
 app = Flask(__name__)
 
 # Define your OpenAI key (either pass it here or set it in environment variables)
-api_key = "xyz"
+api_key = os.getenv("OPEN_AI_API_KEY")  
 
 # Initialize OpenAI GPT model
 llm = OpenAI(openai_api_key=api_key, temperature=0.5)
