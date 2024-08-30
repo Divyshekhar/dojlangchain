@@ -5,7 +5,7 @@ from langchain.prompts import PromptTemplate
 app = Flask(__name__)
 
 # Define your OpenAI key (either pass it here or set it in environment variables)
-api_key = "sk-hGQXtyPcMIMRLzCXzlukOgMayErLiho-GJbYwf0UI8T3BlbkFJZuGyFRaza6wTWMmooBU118jp9GOUj6UCKTV_v6_ykA"
+api_key = "xyz"
 
 # Initialize OpenAI GPT model
 llm = OpenAI(openai_api_key=api_key, temperature=0.5)
